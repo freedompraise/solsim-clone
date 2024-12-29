@@ -1,10 +1,12 @@
+import logo from "../assets/logo.png";
+
 const Navbar = () => {
   return (
     <div className="fixed top-0 w-full shadow-lg bg-white">
       <div className="max-w-[1512px] mx-auto flex items-center justify-between h-[90px] px-4 lg:px-10">
         {/* Logo Section */}
         <div className="flex items-center space-x-3">
-          <img src="/logo.png" alt="Logo" className="w-[27.64px] h-[32px]" />
+          <img src={logo} alt="Logo" className="w-[27.64px] h-[32px]" />
           <h1 className="text-black font-inter font-semibold text-[16px] leading-[19px] tracking-[0.14em]">
             SOLSIM
           </h1>

@@ -1,14 +1,11 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  purge: [
+    "./src/**/*.{js,jsx,ts,tsx}", // Look for classes used in JS/JSX/TS/TSX files
+    "./public/index.html", // Look for classes used in the HTML file
+  ],
+  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["system-ui", "ui-sans-serif"],
-        serif: ["Georgia", "ui-serif"],
-        mono: ["Menlo", "ui-monospace"],
-      },
-    },
+    extend: {},
   },
   variants: {
     extend: {},

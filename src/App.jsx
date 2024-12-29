@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import "tailwindcss/tailwind.css";
 import "./index.css";
 
 export default function App() {

@@ -19,7 +19,7 @@ const HeroSection = () => {
           >
             Enter phone number
           </label>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-0">
             <select
               className="bg-white text-[#001027] font-inter font-bold text-[16px] sm:text-[14px] leading-[22px] py-[12px] px-[16px] sm:px-[8px] rounded-[4px] focus:outline-none w-[120px] sm:w-[80px]"
               defaultValue="US"

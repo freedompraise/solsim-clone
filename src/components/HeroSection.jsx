@@ -1,23 +1,46 @@
+import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const HeroSection = () => {
   return (
-    <div className="relative w-full h-[466px] bg-gradient-to-r from-[#EEBEFF] to-[#ADA6FF] rounded-b-[100px] mt-[90px]">
-      <div className="container mx-auto flex flex-col items-center justify-center h-full">
-        <h3 className="text-white font-inter font-bold text-[24px] leading-[29px] text-center">
+    <div
+      className="bg-cover bg-center bg-no-repeat h-[400px] lg:h-[500px] sm:h-[300px] flex items-center w-full"
+      style={{ backgroundImage: "url('src/assets/globe.jpg')" }}
+    >
+      <div className="container mx-auto flex flex-col items-center justify-center h-full px-8 sm:px-4">
+        <h3 className="font-inter font-bold lg:text-[32px] text-[24px] sm:text-[18px] leading-[36px] sm:leading-[29px] text-center lg:mt-24 sm:mt-8 lg:w-1/2 sm:w-full">
           Top up prepaid mobile phones with Solana and other cryptocurrencies
           from anywhere in the world
         </h3>
-        <div className="flex items-center space-x-4 mt-4">
+        <div className="flex flex-col items-center space-y-2 mt-6 lg:w-1/2 sm:w-full">
           <label
             htmlFor="phone"
-            className="text-white font-inter font-bold text-[16px] leading-[22px]"
+            className="font-inter font-bold text-[16px] sm:text-[14px] leading-[22px] ml-2"
           >
             Enter phone number
           </label>
-          <input
-            type="text"
-            placeholder="+123456789"
-            className="bg-white text-[#001027] font-inter font-bold text-[16px] leading-[22px] py-[12px] px-[24px] rounded-[4px] w-[400px] focus:outline-none"
-          />
+          <div className="flex items-center space-x-2">
+            <select
+              className="bg-white text-[#001027] font-inter font-bold text-[16px] sm:text-[14px] leading-[22px] py-[12px] px-[16px] sm:px-[8px] rounded-[4px] focus:outline-none w-[120px] sm:w-[80px]"
+              defaultValue="US"
+            >
+              <option value="US">+1</option>
+              <option value="CA">+1</option>
+              <option value="GB">+44</option>
+              <option value="AU">+61</option>
+              <option value="IN">+91</option>
+              <option value="DE">+49</option>
+              <option value="FR">+33</option>
+            </select>
+            <input
+              type="text"
+              placeholder="(201) 555-1234"
+              className="bg-white text-[#001027] font-inter font-bold text-[16px] sm:text-[14px] leading-[22px] py-[12px] px-[16px] sm:px-[8px] rounded-[4px] w-full focus:outline-none"
+            />
+            <button className="bg-[#CC3DFF] text-white font-inter font-bold text-[16px] sm:text-[14px] leading-[22px] py-[12px] px-[24px] sm:px-[8px] rounded-[4px] focus:outline-none">
+              <FontAwesomeIcon icon={faGreaterThan} />
+            </button>
+          </div>
         </div>
       </div>
     </div>

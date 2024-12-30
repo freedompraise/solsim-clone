@@ -22,7 +22,7 @@ export default function Footer() {
           />
           <FontAwesomeIcon
             icon={faTwitter}
-            className="text-xl hover:text-blue-400"
+            className="text-xl hover:text-black"
           />
           <FontAwesomeIcon
             icon={faInstagram}

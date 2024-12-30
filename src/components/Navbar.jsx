@@ -1,4 +1,6 @@
 import logo from "../assets/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -31,14 +33,9 @@ const Navbar = () => {
             Connect Wallet
           </button>
           <div className="bg-white border border-[#CC3DFF] rounded-[8px] w-[44px] h-[44px] flex justify-center items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="#CC3DFF"
-              viewBox="0 0 24 24"
-              className="w-6 h-6"
-            >
-              <path d="M3 4h18v16H3z" />
-            </svg>
+            <i className="text-[#CC3DFF] text-[20px]">
+              <FontAwesomeIcon icon={faCartShopping} />
+            </i>
           </div>
         </div>
       </div>

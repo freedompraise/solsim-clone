@@ -1,11 +1,12 @@
 import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import globeImage from "../assets/globe.jpg";
 
 const HeroSection = () => {
   return (
     <div
       className="bg-cover bg-center bg-no-repeat h-[400px] lg:h-[500px] sm:h-[300px] flex items-center w-full"
-      style={{ backgroundImage: "url('src/assets/globe.jpg')" }}
+      style={{ backgroundImage: `url(${globeImage})` }}
     >
       <div className="container mx-auto flex flex-col items-center justify-center h-full px-8 sm:px-4">
         <h3 className="font-inter font-bold lg:text-[32px] text-[24px] sm:text-[18px] leading-[36px] sm:leading-[29px] text-center lg:mt-24 sm:mt-8 lg:w-1/2 sm:w-full">

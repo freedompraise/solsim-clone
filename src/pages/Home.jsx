@@ -1,9 +1,11 @@
 import HeroSection from "../components/HeroSection";
+import CountryFlagsSection from "../components/PopularCountries";
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-gray-100">
       <HeroSection />
+      <CountryFlagsSection />
     </div>
   );
 };

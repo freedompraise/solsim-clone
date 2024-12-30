@@ -15,7 +15,7 @@ const CountryFlagsSection = () => {
   ];
 
   return (
-    <div className="container px-4 mx-auto my-16">
+    <div className="container px-8 mx-auto my-16">
       <h2 className="text-3xl font-inter font-bold leading-[32px] text-center mb-4">
         Popular Countries
       </h2>

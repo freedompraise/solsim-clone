@@ -1,46 +1,38 @@
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
+  faLinkedin,
   faTwitter,
-  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-6">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-        {/* Left Section */}
-        <div className="text-center md:text-left">
-          <p className="text-sm">&copy; 2024 Solsim. All rights reserved.</p>
+    <footer class="bg-purple-200 py-4">
+      <div class="flex justify-center gap-4">
+        <div class="bg-black w-10 h-10 rounded-full flex items-center justify-center">
+          <i class="text-white text-2xl">
+            <FontAwesomeIcon icon={faTwitter} />
+          </i>
         </div>
-
-        {/* Center Section */}
-        <div className="space-x-6">
-          <FontAwesomeIcon
-            icon={faFacebook}
-            className="text-xl hover:text-blue-500"
-          />
-          <FontAwesomeIcon
-            icon={faTwitter}
-            className="text-xl hover:text-black"
-          />
-          <FontAwesomeIcon
-            icon={faInstagram}
-            className="text-xl hover:text-pink-500"
-          />
+        <div class="bg-black w-10 h-10 rounded-full flex items-center justify-center">
+          <i class="text-white text-2xl">
+            <FontAwesomeIcon icon={faFacebook} />
+          </i>
         </div>
-
-        {/* Right Section */}
-        <div className="text-center md:text-right">
-          <a href="#" className="text-sm hover:underline">
-            Privacy Policy
-          </a>
-          <span className="mx-2">|</span>
-          <a href="#" className="text-sm hover:underline">
-            Terms of Service
-          </a>
+        <div class="bg-black w-10 h-10 rounded-full flex items-center justify-center">
+          <i class="text-white text-2xl">
+            <FontAwesomeIcon icon={faGithub} />
+          </i>
+        </div>
+        <div class="bg-black w-10 h-10 rounded-full flex items-center justify-center">
+          <i class="text-white text-2xl">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </i>
         </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

@@ -1,6 +1,6 @@
 import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import globeImage from "../assets/globe.jpg";
+import globeImage from "../../assets/globe.jpg";
 
 const HeroSection = () => {
   return (

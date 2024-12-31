@@ -1,7 +1,7 @@
-import HeroSection from "../components/HeroSection";
-import CountryFlagsSection from "../components/PopularCountries";
-import WhyUseUs from "../components/WhyUseUs";
-import HowItSolsimWorks from "../components/HowItWorks";
+import HeroSection from "../components/Home/HeroSection";
+import CountryFlagsSection from "../components/Home/PopularCountries";
+import WhyUseUs from "../components/Home/WhyUseUs";
+import HowItSolsimWorks from "../components/Home/HowItWorks";
 
 const Home = () => {
   return (

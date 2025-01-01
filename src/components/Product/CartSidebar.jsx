@@ -21,7 +21,7 @@ const CartSidebar = ({ closeCart }) => {
           <span>6.27 SOL</span>
         </div>
       </div>
-      <button className="w-full bg-purple-600 text-white py-2 rounded mt-6 hover:bg-purple-700">
+      <button className="w-full bg-[#CC3DFF] text-white py-2 rounded mt-6 hover:bg-purple-700">
         Proceed to Checkout
       </button>
     </div>

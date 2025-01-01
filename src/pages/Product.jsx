@@ -7,7 +7,7 @@ const ProductPage = () => {
   const [cartOpen, setCartOpen] = useState(false);
 
   return (
-    <div className="flex flex-col md:flex-row gap-8 p-6">
+    <div className="flex flex-col md:flex-row gap-32 mt-16 p-6 bg-gray-100">
       {/* Product Card */}
       <div className="flex-1">
         <ProductCard />

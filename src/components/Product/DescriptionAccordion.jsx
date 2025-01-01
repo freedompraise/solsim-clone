@@ -14,9 +14,9 @@ const DescriptionAccordion = () => {
   ];
 
   return (
-    <div className="mt-6">
+    <div className="mt-6 lg:px-4">
       {sections.map((section, index) => (
-        <div key={index} className="border-b">
+        <div key={index} className="border-b-2 border-gray-400">
           <button
             onClick={() => toggleSection(index)}
             className="w-full text-left py-2 font-semibold"

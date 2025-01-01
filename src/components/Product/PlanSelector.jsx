@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const PlanSelector = ({ openCart }) => {
   return (
-    <div className="lg:pr-24 lg:py-8 sm:py-4 lg:px-4">
+    <div className="lg:pr-24 font-inter lg:py-8 sm:py-4 lg:px-4">
       {/* Heading */}
       <h2 className="text-2xl font-bold">SOLSIM Global</h2>
 

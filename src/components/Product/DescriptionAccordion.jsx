@@ -9,12 +9,12 @@ const DescriptionAccordion = () => {
   const sections = [
     { title: "Description", content: "Details about the SOLSIM product." },
     { title: "How to Redeem", content: "Steps to redeem your SOLSIM." },
-    { title: "Review", content: "Customer reviews go here." },
+    { title: "Review (28)", content: "Customer reviews go here." },
     { title: "Terms and Conditions", content: "T&C details." },
   ];
 
   return (
-    <div className="mt-6 lg:px-4">
+    <div className="mt-6 lg:px-4 font-inter">
       {sections.map((section, index) => (
         <div key={index} className="border-b-2 border-gray-400">
           <button

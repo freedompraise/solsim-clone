@@ -7,7 +7,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <div className="fixed top-0 w-full shadow-lg bg-white">
+    <div className="fixed top-0 w-full shadow-lg bg-white z-50">
       <div className="max-w-[1512px] mx-auto flex items-center justify-between h-[90px] px-4">
         {/* Logo Section */}
         <div className="flex items-center space-x-3">
